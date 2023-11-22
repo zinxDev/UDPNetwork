@@ -24,7 +24,7 @@ UDPClient client = new UDPClient(clientName, localIp, clientLocalPort, serverHos
 参数含义：
 clientName:客户端名字；localIp：客户端用于监听消息的ip地址；clientLocalPort：客户端用于监听消息的端口号；serverHost：服务器的地址；serverPort：服务器的端口（serverLocalPort）；syncThreadNum：用于状态同步的线程数；
 
-3.同步的使用
+3.状态同步的使用
 SynContainer类提供同步服务，用法如下：
 (1)服务器开启同步：SynContainer synContainer = new SynContainer(syncName, udpServer);
 参数含义：

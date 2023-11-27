@@ -36,6 +36,7 @@ syncName：同步的名字;
 udpClient:UDPClient对象；
 
 4.可靠UDP消息收发
+
 使用RpcItemSync类进行消息量化处理，用法：
 RpcItemSync item = new RpcItemSync(messageName, id, syncId, udpServer, argLen, (syncId, args) =>{});
 udpServer.Register(id, new INetworkSync[] { item });
